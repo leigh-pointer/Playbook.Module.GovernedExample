@@ -19,11 +19,11 @@
     <File Path="docs/governance/027x-ui-validation.md" />
     <File Path="docs/governance/README.md" />
   </Folder>
-  <Folder Name="/docs/governance/prompts/">
-    <File Path="docs/governance/prompts/diagnositics.md" />
-    <File Path="docs/governance/prompts/README.md" />
-    <File Path="docs/governance/prompts/services.md" />
-    <File Path="docs/governance/prompts/ui.md" />
+  <Folder Name="/docs/prompts/">
+    <File Path="docs/prompts/diagnositics.md" />
+    <File Path="docs/prompts/README.md" />
+    <File Path="docs/prompts/services.md" />
+    <File Path="docs/prompts/ui.md" />
   </Folder>
   <Folder Name="/_Oqtane/">
     <Project Path="../oqtane.framework/Oqtane.Client/Oqtane.Client.csproj" />

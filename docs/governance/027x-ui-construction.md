@@ -11,10 +11,10 @@ They exist to ensure:
 - Alignment with canonical Oqtane UI patterns
 - Prevention of implicit or framework-invented behavior
 
-[Rule 2: Prohibited Use of EditForm](#rule-2-prohibited-use-of-editform)
+[Rule 2: Prohibited Use of EditForm](#rule-2-prohibited-use-of-editform) (Explicit Opt-In)
 ## Rule 2: Prohibited Use of `EditForm`
 
-The Blazor `EditForm` component **must not be used**.
+The Blazor `EditForm` component **MUST NOT be used by default**.
 
 UI must be constructed using **explicit HTML elements**, including:
 
@@ -22,14 +22,60 @@ UI must be constructed using **explicit HTML elements**, including:
 - `<input>`
 - `<select>`
 - `<textarea>`
+- `<button type="button">`
 
-Validation and save behavior must be **explicit and visible*- in code.
+Validation and save behavior must be **explicit, visible, and imperative*- in code.
 
-**Reject if:**
+---
 
-- `EditForm` is used
+### Explicit Opt-In Exception
+
+`EditForm` **MAY ONLY*- be used when **explicitly requested by the user*- in the prompt.
+
+An explicit request MUST:
+
+- Mention `EditForm` by name
+- Clearly state that its use is intentional
+
+Examples of valid opt-in prompts:
+
+- “Use `EditForm` for this component”
+- “Implement this using Blazor `EditForm` and DataAnnotations”
+- “This UI should explicitly use `EditForm`”
+
+If the prompt does **not*- explicitly opt in, `EditForm` is **forbidden**.
+
+---
+
+### Reject If
+
+Reject the output immediately if **any*- of the following occur:
+
+- `EditForm` is used without an explicit opt-in request
 - Validation logic is hidden behind framework abstractions
 - Form submission behavior is implicit or inferred
+- `type="submit"` is used without being explicitly requested
+- Business or save logic is obscured by Blazor form abstractions
+
+---
+
+### Enforcement Notes
+
+- Familiarity, convention, or “best practice” is **not justification**
+- Historical Blazor defaults are **irrelevant**
+- Governance rules override AI priors and training bias
+- Silence is **not consent**
+
+---
+
+### Intent
+
+This rule exists to ensure that:
+
+- UI behavior is inspectable
+- Validation is traceable
+- Save logic is auditable
+- AI does not “helpfully” abstract critical behavior away
 
 ---
 

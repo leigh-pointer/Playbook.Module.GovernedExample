@@ -55,6 +55,26 @@ Examples:
 
 ---
 
+## UI Framework Policy
+
+This playbook is **Oqtane-first**.
+
+By default, all UI guidance follows:
+- Bootstrap
+- Explicit HTML elements
+- Visible validation and save logic
+- Canonical Oqtane UI patterns
+
+Alternative UI frameworks (such as MudBlazor) are **not enabled by default**.
+
+They may be used **only by explicit opt-in** and are governed by
+dedicated rule documents (for example: `027x-ui-mudblazor.md`).
+
+If a framework is not explicitly requested and governed,
+it must not be introduced.
+
+---
+
 ## Rule Enforcement Order
 
 When rules conflict, precedence is:

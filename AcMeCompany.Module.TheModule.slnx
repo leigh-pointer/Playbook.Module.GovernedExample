@@ -16,6 +16,7 @@
     <File Path="docs/governance/027x-startup.md" />
     <File Path="docs/governance/027x-structure-and-boundaries.md" />
     <File Path="docs/governance/027x-ui-construction.md" />
+    <File Path="docs/governance/027x-ui-mudblazor.md" />
     <File Path="docs/governance/027x-ui-validation.md" />
     <File Path="docs/governance/README.md" />
   </Folder>

@@ -106,6 +106,10 @@ Error handling, user feedback, logging, and exception flow rules.
 -- **027x-ui-construction.md**
 UI construction rules for Razor components and HTML structure.
 
+-- **027x-ui-mudblazor.md**
+
+MudBlazor usage in Oqtane modules **only when explicitly requested**.
+
 ---
 
 ## Rule Precedence

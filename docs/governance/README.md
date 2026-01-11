@@ -3,7 +3,7 @@
 This folder contains the **enforceable AI governance rules** for this repository.
 
 These rules exist to ensure that:
-- AI-generated code follows Oqtane�s architectural constraints
+- AI-generated code follows Oqtane�s architectural constraints
 - Invalid patterns are rejected early
 - Decisions are consistent, reviewable, and repeatable
 - Previously rejected approaches are not reintroduced
@@ -46,7 +46,7 @@ Rule files must:
 - Be explicit
 - Contain rejection criteria
 - Be enforceable without interpretation
-- Avoid recommendations or �best practices�
+- Avoid recommendations or �best practices�
 
 Examples:
 - `027x-core-ai-behavior.md`
@@ -99,6 +99,49 @@ AI must:
 - Propose new entries when a refusal or invariant occurs
 
 Timeline entries are **append-only**.
+
+---
+
+## Governance File Visibility (Critical)
+
+This playbook **does not require copying files** into every module.
+
+What matters is **IDE visibility**, not physical location.
+
+### Supported Model (Recommended)
+
+Governance and prompt files may live **anywhere on disk**, as long as:
+
+* They are added to the module **solution** as *existing documents*
+* They appear under a `docs/` solution folder
+* Copilot can *read* them at prompt time
+
+### Example (Linked Files)
+
+A module solution may include:
+
+```
+docs/
+├── governance/
+│   ├── 027-rules-index.md
+│   ├── 027x-ui-construction.md
+│   ├── 027x-migrations.md
+│   └── ...
+└── prompts/
+    ├── ui.md
+    ├── services.md
+    └── diagnostics.md
+```
+
+These files may be **linked** from another folder or repository:
+
+```
+<Folder Name="/docs/governance/">
+  <File Path="..\..\..\Oqtane-AI-Playbook\docs\governance\027-rules-index.md" />
+</Folder>
+```
+
+
 
 ---
 

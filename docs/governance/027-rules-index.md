@@ -110,6 +110,9 @@ UI construction rules for Razor components and HTML structure.
 
 MudBlazor usage in Oqtane modules **only when explicitly requested**.
 
+-- **027x-ui-radzen.md**
+
+Radzen usage in Oqtane modules **only when explicitly requested**.
 ---
 
 ## Rule Precedence

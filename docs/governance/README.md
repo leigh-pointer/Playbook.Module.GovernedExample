@@ -3,7 +3,7 @@
 This folder contains the **enforceable AI governance rules** for this repository.
 
 These rules exist to ensure that:
-- AI-generated code follows Oqtane�s architectural constraints
+- AI-generated code follows Oqtane's architectural constraints
 - Invalid patterns are rejected early
 - Decisions are consistent, reviewable, and repeatable
 - Previously rejected approaches are not reintroduced
@@ -46,7 +46,7 @@ Rule files must:
 - Be explicit
 - Contain rejection criteria
 - Be enforceable without interpretation
-- Avoid recommendations or �best practices�
+- Avoid recommendations or 'best practices'
 
 Examples:
 - `027x-core-ai-behavior.md`

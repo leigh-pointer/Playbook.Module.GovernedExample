@@ -5,11 +5,13 @@
   </Folder>
   <Folder Name="/docs/governance/">
     <File Path="docs/governance/027-rules-index.md" />
+    <File Path="docs/governance/027x-ai-decision-timeline.md" />
     <File Path="docs/governance/027x-authorization.md" />
     <File Path="docs/governance/027x-canonical-framework.md" />
     <File Path="docs/governance/027x-canonical-validation.md" />
     <File Path="docs/governance/027x-core-ai-behavior.md" />
     <File Path="docs/governance/027x-error-handling.md" />
+    <File Path="docs/governance/027x-localization.md" />
     <File Path="docs/governance/027x-migrations.md" />
     <File Path="docs/governance/027x-repositories.md" />
     <File Path="docs/governance/027x-scheduled-jobs.md" />
@@ -23,6 +25,7 @@
   </Folder>
   <Folder Name="/docs/prompts/">
     <File Path="docs/prompts/diagnositics.md" />
+    <File Path="docs/prompts/Localization Opt-In.md" />
     <File Path="docs/prompts/README.md" />
     <File Path="docs/prompts/services.md" />
     <File Path="docs/prompts/ui.md" />

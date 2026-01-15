@@ -80,6 +80,7 @@ Governs when and how AI decisions are recorded as binding memory.
 - **027x-scheduled-jobs.md**
 
 Rules for Oqtane Scheduled Jobs (`HostedServiceBase` only).
+
 - **027x-migrations.md**
 
 Database migration rules for multi-database Oqtane modules.
@@ -94,11 +95,20 @@ Repository responsibilities, boundaries, and prohibited logic.
 
 ---
 
+### Optional (Opt-In) Rules
+
+- **027x-localization.md**
+Governs correct and canonical localization behavior for Oqtane modules once localization is intentionally enabled.
+
+---
+
+
 ### UI & Client Behavior
 
 - **027x-ui-validation.md**
 
 Client-side and server-side validation rules for Razor components.
+
 - **027x-error-handling.md**
 
 Error handling, user feedback, logging, and exception flow rules.

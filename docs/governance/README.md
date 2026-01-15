@@ -1,5 +1,9 @@
 # Governance Rules
 
+![Rule-Based Governance](https://img.shields.io/badge/Governance-Rule%20Based-purple)
+![No Invented Patterns](https://img.shields.io/badge/AI-No%20Invented%20Patterns-red)
+![Timeline Enforced](https://img.shields.io/badge/AI-Decision%20Timeline-orange)
+
 This folder contains the **enforceable AI governance rules** for this repository.
 
 These rules exist to ensure that:

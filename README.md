@@ -1,5 +1,21 @@
 # AcMeCompany.Module.TheModule
 
+# Oqtane AI Playbook
+
+![Oqtane](https://img.shields.io/badge/Oqtane-Framework-blue)
+![AI Governance](https://img.shields.io/badge/AI-Governed-027-green)
+![Canonical Source](https://img.shields.io/badge/Canonical-Oqtane%20Framework-black)
+
+![Rule-Based Governance](https://img.shields.io/badge/Governance-Rule%20Based-purple)
+![No Invented Patterns](https://img.shields.io/badge/AI-No%20Invented%20Patterns-red)
+![Timeline Enforced](https://img.shields.io/badge/AI-Decision%20Timeline-orange)
+
+![Bootstrap UI](https://img.shields.io/badge/UI-Bootstrap%20Native-blueviolet)
+![No EditForm](https://img.shields.io/badge/UI-No%20EditForm-red)
+
+[![Localization Opt-In](https://img.shields.io/badge/Localization-Opt--In-blue)](docs/governance/027x-localization.md)
+
+
 **Oqtane Module — AI-Governed Example Implementation**
 
 ## What This Repository Is

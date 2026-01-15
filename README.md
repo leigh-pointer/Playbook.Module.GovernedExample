@@ -3,7 +3,7 @@
 # Oqtane AI Playbook
 
 ![Oqtane](https://img.shields.io/badge/Oqtane-Framework-blue)
-![AI Governance](https://img.shields.io/badge/AI-Governed-027-green)
+![AI Governance](https://img.shields.io/badge/AI-Governed-027%20Based--green)
 ![Canonical Source](https://img.shields.io/badge/Canonical-Oqtane%20Framework-black)
 
 ![Rule-Based Governance](https://img.shields.io/badge/Governance-Rule%20Based-purple)

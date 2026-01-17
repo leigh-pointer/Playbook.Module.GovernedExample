@@ -16,7 +16,7 @@
 [![Localization Opt-In](https://img.shields.io/badge/Localization-Opt--In-blue)](docs/governance/027x-localization.md)
 
 
-**Oqtane Module â€” AI-Governed Example Implementation**
+**Oqtane Modul — AI-Governed Example Implementation**
 
 ## What This Repository Is
 
@@ -37,7 +37,7 @@ It is a **reference implementation** - showing how AI-assisted development can b
 
 ## Why This Exists
 
-AI tools are powerful â€” but without governance they:
+AI tools are powerful — but without governance they:
 
 - Invent architectural patterns
 - Apply generic ASP.NET Core behavior
@@ -213,5 +213,5 @@ This repository is meant to be **used**, not just read.
 ## Final Note
 
 - This module is not about writing *more- code faster.
-- Itâ€™s about writing **correct code** - with AI â€” repeatedly â€” without losing control.
+- Itâ€™s about writing **correct code** - with AI — repeatedly — without losing control.
 - If you understand *why- this works, youâ€™re ready to extend the playbook.

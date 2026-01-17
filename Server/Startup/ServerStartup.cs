@@ -1,11 +1,11 @@
-using Microsoft.AspNetCore.Builder; 
+﻿using Microsoft.AspNetCore.Builder; 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Oqtane.Infrastructure;
-using AcMeCompany.Module.TheModule.Repository;
-using AcMeCompany.Module.TheModule.Services;
+using Playbook.Module.GovernedExample.Repository;
+using Playbook.Module.GovernedExample.Services;
 
-namespace AcMeCompany.Module.TheModule.Startup
+namespace Playbook.Module.GovernedExample.Startup
 {
     public class ServerStartup : IServerStartup
     {
@@ -21,8 +21,9 @@ namespace AcMeCompany.Module.TheModule.Startup
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<ITheModuleService, ServerTheModuleService>();
-            services.AddDbContextFactory<TheModuleContext>(opt => { }, ServiceLifetime.Transient);
+            services.AddTransient<IGovernedExampleService, ServerGovernedExampleService>();
+            services.AddDbContextFactory<GovernedExampleContext>(opt => { }, ServiceLifetime.Transient);
         }
     }
 }
+

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\AcMeCompany.Module.TheModule.Client.csproj" />
-    <ProjectReference Include="..\Server\AcMeCompany.Module.TheModule.Server.csproj" />
-    <ProjectReference Include="..\Shared\AcMeCompany.Module.TheModule.Shared.csproj" />
+    <ProjectReference Include="..\Client\Playbook.Module.GovernedExample.Client.csproj" />
+    <ProjectReference Include="..\Server\Playbook.Module.GovernedExample.Server.csproj" />
+    <ProjectReference Include="..\Shared\Playbook.Module.GovernedExample.Shared.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

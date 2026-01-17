@@ -1,0 +1,79 @@
+﻿@using Playbook.Module.GovernedExample.Services
+@using Playbook.Module.GovernedExample.Models
+
+@namespace Playbook.Module.GovernedExample
+@inherits ModuleBase
+@inject IGovernedExampleService GovernedExampleService
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<Index> Localizer
+
+@if (_GovernedExamples == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ActionLink Action="Add" Security="SecurityAccessLevel.Edit" Text="Add GovernedExample" ResourceKey="Add" />
+    <br />
+    <br />
+    @if (@_GovernedExamples.Count != 0)
+    {
+        <Pager Items="@_GovernedExamples">
+            <Header>
+                <th style="width: 1px;">&nbsp;</th>
+                <th style="width: 1px;">&nbsp;</th>
+                <th>@Localizer["Name"]</th>
+            </Header>
+            <Row>
+                <td><ActionLink Action="Edit" Parameters="@($"id=" + context.GovernedExampleId.ToString())" ResourceKey="Edit"  /></td>
+                <td><ActionDialog Header="Delete GovernedExample" Message="Are You Sure You Wish To Delete This GovernedExample?" Action="Delete" Security="SecurityAccessLevel.Edit" Class="btn btn-danger" OnClick="@(async () => await Delete(context))" ResourceKey="Delete"  Id="@context.GovernedExampleId.ToString()" /></td>
+                <td>@context.Name</td>
+            </Row>
+        </Pager>
+    }
+    else
+    {
+        <p>@Localizer["Message.DisplayNone"]</p>
+    }
+}
+
+@code {
+    public override string RenderMode => RenderModes.Static;
+
+    public override List<Resource> Resources => new List<Resource>()
+    {
+        new Stylesheet("_content/Playbook.Module.GovernedExample/Module.css"),
+        new Script("_content/Playbook.Module.GovernedExample/Module.js")
+    };
+
+    List<GovernedExample> _GovernedExamples;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _GovernedExamples = await GovernedExampleService.GetGovernedExamplesAsync(ModuleState.ModuleId);
+        }
+        catch (Exception ex)
+        {
+            await logger.LogError(ex, "Error Loading GovernedExample {Error}", ex.Message);
+            AddModuleMessage(Localizer["Message.LoadError"], MessageType.Error);
+        }
+    }
+
+    private async Task Delete(GovernedExample GovernedExample)
+    {
+        try
+        {
+            await GovernedExampleService.DeleteGovernedExampleAsync(GovernedExample.GovernedExampleId, ModuleState.ModuleId);
+            await logger.LogInformation("GovernedExample Deleted {GovernedExample}", GovernedExample);
+            _GovernedExamples = await GovernedExampleService.GetGovernedExamplesAsync(ModuleState.ModuleId);
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            await logger.LogError(ex, "Error Deleting GovernedExample {GovernedExample} {Error}", GovernedExample, ex.Message);
+            AddModuleMessage(Localizer["Message.DeleteError"], MessageType.Error);
+        }
+    }
+}

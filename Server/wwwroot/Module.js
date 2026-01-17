@@ -1,5 +1,5 @@
-/* Module Script */
-var AcMeCompany = AcMeCompany || {};
+﻿/* Module Script */
+var Playbook = Playbook || {};
 
-AcMeCompany.TheModule = {
+Playbook.GovernedExample = {
 };

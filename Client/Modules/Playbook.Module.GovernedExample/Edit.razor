@@ -1,10 +1,10 @@
-@using Oqtane.Modules.Controls
-@using AcMeCompany.Module.TheModule.Services
-@using AcMeCompany.Module.TheModule.Models
+﻿@using Oqtane.Modules.Controls
+@using Playbook.Module.GovernedExample.Services
+@using Playbook.Module.GovernedExample.Models
 
-@namespace AcMeCompany.Module.TheModule
+@namespace Playbook.Module.GovernedExample
 @inherits ModuleBase
-@inject ITheModuleService TheModuleService
+@inject IGovernedExampleService GovernedExampleService
 @inject NavigationManager NavigationManager
 @inject IStringLocalizer<Edit> Localizer
 
@@ -31,11 +31,11 @@
 
     public override string Actions => "Add,Edit";
 
-    public override string Title => "Manage TheModule";
+    public override string Title => "Manage GovernedExample";
 
     public override List<Resource> Resources => new List<Resource>()
     {
-        new Stylesheet("_content/AcMeCompany.Module.TheModule/Module.css")
+        new Stylesheet("_content/Playbook.Module.GovernedExample/Module.css")
     };
 
     private ElementReference form;
@@ -55,20 +55,20 @@
             if (PageState.Action == "Edit")
             {
                 _id = Int32.Parse(PageState.QueryString["id"]);
-                TheModule TheModule = await TheModuleService.GetTheModuleAsync(_id, ModuleState.ModuleId);
-                if (TheModule != null)
+                GovernedExample GovernedExample = await GovernedExampleService.GetGovernedExampleAsync(_id, ModuleState.ModuleId);
+                if (GovernedExample != null)
                 {
-                    _name = TheModule.Name;
-                    _createdby = TheModule.CreatedBy;
-                    _createdon = TheModule.CreatedOn;
-                    _modifiedby = TheModule.ModifiedBy;
-                    _modifiedon = TheModule.ModifiedOn;
+                    _name = GovernedExample.Name;
+                    _createdby = GovernedExample.CreatedBy;
+                    _createdon = GovernedExample.CreatedOn;
+                    _modifiedby = GovernedExample.ModifiedBy;
+                    _modifiedon = GovernedExample.ModifiedOn;
                 }
             }
         }
         catch (Exception ex)
         {
-            await logger.LogError(ex, "Error Loading TheModule {TheModuleId} {Error}", _id, ex.Message);
+            await logger.LogError(ex, "Error Loading GovernedExample {GovernedExampleId} {Error}", _id, ex.Message);
             AddModuleMessage(Localizer["Message.LoadError"], MessageType.Error);
         }
     }
@@ -83,18 +83,18 @@
             {
                 if (PageState.Action == "Add")
                 {
-                    TheModule TheModule = new TheModule();
-                    TheModule.ModuleId = ModuleState.ModuleId;
-                    TheModule.Name = _name;
-                    TheModule = await TheModuleService.AddTheModuleAsync(TheModule);
-                    await logger.LogInformation("TheModule Added {TheModule}", TheModule);
+                    GovernedExample GovernedExample = new GovernedExample();
+                    GovernedExample.ModuleId = ModuleState.ModuleId;
+                    GovernedExample.Name = _name;
+                    GovernedExample = await GovernedExampleService.AddGovernedExampleAsync(GovernedExample);
+                    await logger.LogInformation("GovernedExample Added {GovernedExample}", GovernedExample);
                 }
                 else
                 {
-                    TheModule TheModule = await TheModuleService.GetTheModuleAsync(_id, ModuleState.ModuleId);
-                    TheModule.Name = _name;
-                    await TheModuleService.UpdateTheModuleAsync(TheModule);
-                    await logger.LogInformation("TheModule Updated {TheModule}", TheModule);
+                    GovernedExample GovernedExample = await GovernedExampleService.GetGovernedExampleAsync(_id, ModuleState.ModuleId);
+                    GovernedExample.Name = _name;
+                    await GovernedExampleService.UpdateGovernedExampleAsync(GovernedExample);
+                    await logger.LogInformation("GovernedExample Updated {GovernedExample}", GovernedExample);
                 }
                 NavigationManager.NavigateTo(NavigateUrl());
             }
@@ -105,8 +105,9 @@
         }
         catch (Exception ex)
         {
-            await logger.LogError(ex, "Error Saving TheModule {Error}", ex.Message);
+            await logger.LogError(ex, "Error Saving GovernedExample {Error}", ex.Message);
             AddModuleMessage(Localizer["Message.SaveError"], MessageType.Error);
         }
     }
 }
+

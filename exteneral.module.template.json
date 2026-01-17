@@ -1,6 +1,7 @@
-{
+﻿{
   "Title": "Default Module Template",
   "Type": "External",
   "Version": "10.0.0",
-  "Namespace": "AcMeCompany.Module.TheModule"
+  "Namespace": "Playbook.Module.GovernedExample"
 }
+

@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>$projectname$</id>
         <version>1.0.0</version>
-        <authors>AcMeCompany</authors>
-        <owners>AcMeCompany</owners>
-        <title>TheModule</title>
-        <description>AcMeCompany TheModule</description>
-        <copyright>AcMeCompany</copyright>
+        <authors>Playbook</authors>
+        <owners>Playbook</owners>
+        <title>GovernedExample</title>
+        <description>Playbook GovernedExample</description>
+        <copyright>Playbook</copyright>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <license type="expression">MIT</license>
         <projectUrl>https://github.com/oqtane/oqtane.framework</projectUrl>

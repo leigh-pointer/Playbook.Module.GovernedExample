@@ -1,14 +1,14 @@
-using Microsoft.EntityFrameworkCore.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Oqtane.Databases.Interfaces;
 using Oqtane.Migrations;
-using AcMeCompany.Module.TheModule.Migrations.EntityBuilders;
-using AcMeCompany.Module.TheModule.Repository;
+using Playbook.Module.GovernedExample.Migrations.EntityBuilders;
+using Playbook.Module.GovernedExample.Repository;
 
-namespace AcMeCompany.Module.TheModule.Migrations
+namespace Playbook.Module.GovernedExample.Migrations
 {
-    [DbContext(typeof(TheModuleContext))]
-    [Migration("AcMeCompany.Module.TheModule.01.00.00.00")]
+    [DbContext(typeof(GovernedExampleContext))]
+    [Migration("Playbook.Module.GovernedExample.01.00.00.00")]
     public class InitializeModule : MultiDatabaseMigration
     {
         public InitializeModule(IDatabase database) : base(database)
@@ -17,14 +17,15 @@ namespace AcMeCompany.Module.TheModule.Migrations
 
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            var entityBuilder = new TheModuleEntityBuilder(migrationBuilder, ActiveDatabase);
+            var entityBuilder = new GovernedExampleEntityBuilder(migrationBuilder, ActiveDatabase);
             entityBuilder.Create();
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            var entityBuilder = new TheModuleEntityBuilder(migrationBuilder, ActiveDatabase);
+            var entityBuilder = new GovernedExampleEntityBuilder(migrationBuilder, ActiveDatabase);
             entityBuilder.Drop();
         }
     }
 }
+

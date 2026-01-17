@@ -1,4 +1,5 @@
-using System.Resources;
+﻿using System.Resources;
 using Microsoft.Extensions.Localization;
 
-[assembly: RootNamespace("AcMeCompany.Module.TheModule.Server")]
+[assembly: RootNamespace("Playbook.Module.GovernedExample.Server")]
+

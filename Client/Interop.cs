@@ -1,7 +1,7 @@
-using Microsoft.JSInterop;
+﻿using Microsoft.JSInterop;
 using System.Threading.Tasks;
 
-namespace AcMeCompany.Module.TheModule
+namespace Playbook.Module.GovernedExample
 {
     public class Interop
     {
@@ -13,3 +13,4 @@ namespace AcMeCompany.Module.TheModule
         }
     }
 }
+

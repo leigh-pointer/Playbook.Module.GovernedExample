@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
             Microsoft ResX Schema 
@@ -130,12 +130,12 @@
     <value>Cancel</value>
   </data>
   <data name="Message.LoadError" xml:space="preserve">
-    <value>Error Loading TheModule</value>
+    <value>Error Loading GovernedExample</value>
   </data>
   <data name="Message.SaveValidation" xml:space="preserve">
     <value>Please Provide All Required Information</value>
   </data>
   <data name="Message.SaveError" xml:space="preserve">
-    <value>Error Saving TheModule</value>
+    <value>Error Saving GovernedExample</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-@namespace AcMeCompany.Module.TheModule
+﻿@namespace Playbook.Module.GovernedExample
 @inherits ModuleBase
 @inject ISettingService SettingService
 @inject IStringLocalizer<Settings> Localizer
@@ -13,8 +13,8 @@
 </div>
 
 @code {
-    private string resourceType = "AcMeCompany.Module.TheModule.Settings, AcMeCompany.Module.TheModule.Client.Oqtane"; // for localization
-    public override string Title => "TheModule Settings";
+    private string resourceType = "Playbook.Module.GovernedExample.Settings, Playbook.Module.GovernedExample.Client.Oqtane"; // for localization
+    public override string Title => "GovernedExample Settings";
 
     string _value;
 
@@ -45,3 +45,4 @@
         }
     }
 }
+

@@ -1,4 +1,4 @@
-# AcMeCompany.Module.TheModule
+﻿# Playbook.Module.GovernedExample
 
 # Oqtane AI Playbook
 
@@ -16,7 +16,7 @@
 [![Localization Opt-In](https://img.shields.io/badge/Localization-Opt--In-blue)](docs/governance/027x-localization.md)
 
 
-**Oqtane Module — AI-Governed Example Implementation**
+**Oqtane Module â€” AI-Governed Example Implementation**
 
 ## What This Repository Is
 
@@ -37,7 +37,7 @@ It is a **reference implementation** - showing how AI-assisted development can b
 
 ## Why This Exists
 
-AI tools are powerful — but without governance they:
+AI tools are powerful â€” but without governance they:
 
 - Invent architectural patterns
 - Apply generic ASP.NET Core behavior
@@ -77,19 +77,21 @@ This repository shows:
 ## Repository Structure (Relevant Parts)
 
 ```
-AcMeCompany.Module.TheModule/
+Playbook.Module.GovernedExample/
 ├── .github/
-│   └── copilot-instructions.md   ← AI governance entry point
+│ └── copilot-instructions.md ← AI governance entry point
 │
 ├── docs/
-│   ├── governance/               ← Enforced rule documents (027x-*)
-│   ├── ai-decision-timeline.md   ← Binding AI memory
-│   └── deviations.md             ← Approved exceptions (if any)
+│ ├── governance/ ← Enforced rule documents (027x-*)
+│ ├── ai-decision-timeline.md ← Binding AI memory
+│ └── deviations.md ← Approved exceptions (if any)
 │
 ├── Client/
 ├── Server/
 ├── Shared/
 └── Package/
+
+text
 ```
 
 > 
@@ -204,12 +206,12 @@ This repository is meant to be **used**, not just read.
 - Oqtane module developers
 - Architects exploring AI-assisted development
 - Teams concerned about AI drift
-- Anyone tired of “AI did something weird” explanations
+- Anyone tired of â€œAI did something weirdâ€ explanations
 
 ---
 
 ## Final Note
 
 - This module is not about writing *more- code faster.
-- It’s about writing **correct code** - with AI — repeatedly — without losing control.
-- If you understand *why- this works, you’re ready to extend the playbook.
+- Itâ€™s about writing **correct code** - with AI â€” repeatedly â€” without losing control.
+- If you understand *why- this works, youâ€™re ready to extend the playbook.

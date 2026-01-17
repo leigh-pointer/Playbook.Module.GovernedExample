@@ -1,18 +1,19 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using Oqtane.Services;
-using AcMeCompany.Module.TheModule.Services;
+using Playbook.Module.GovernedExample.Services;
 
-namespace AcMeCompany.Module.TheModule.Startup
+namespace Playbook.Module.GovernedExample.Startup
 {
     public class ClientStartup : IClientStartup
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            if (!services.Any(s => s.ServiceType == typeof(ITheModuleService)))
+            if (!services.Any(s => s.ServiceType == typeof(IGovernedExampleService)))
             {
-                services.AddScoped<ITheModuleService, TheModuleService>();
+                services.AddScoped<IGovernedExampleService, GovernedExampleService>();
             }
         }
     }
 }
+

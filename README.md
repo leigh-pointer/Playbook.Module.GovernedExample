@@ -16,7 +16,7 @@
 [![Localization Opt-In](https://img.shields.io/badge/Localization-Opt--In-blue)](docs/governance/027x-localization.md)
 
 
-**Oqtane Modul — AI-Governed Example Implementation**
+**Oqtane Module — AI-Governed Example Implementation**
 
 ## What This Repository Is
 

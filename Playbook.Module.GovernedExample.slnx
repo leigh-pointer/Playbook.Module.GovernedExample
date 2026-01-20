@@ -1,37 +1,37 @@
 <Solution>
   <Folder Name="/.github/">
-    <File Path="../oqtane-ai-playbook/playbook-example/.github/copilot-instructions.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/.github/copilot-instructions.md" />
   </Folder>
   <Folder Name="/docs/">
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/ai-decision-timeline.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/deviations.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/ai-decision-timeline.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/deviations.md" />
   </Folder>
   <Folder Name="/docs/governance/">
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027-rules-index.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-ai-decision-timeline.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-authorization.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-canonical-framework.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-canonical-validation.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-core-ai-behavior.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-error-handling.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-localization.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-migrations.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-repositories.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-scheduled-jobs.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-startup.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-structure-and-boundaries.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-ui-construction.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-ui-mudblazor.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-ui-Radzen.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/027x-ui-validation.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/governance/README.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027-rules-index.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-ai-decision-timeline.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-authorization.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-canonical-framework.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-canonical-validation.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-core-ai-behavior.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-error-handling.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-localization.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-migrations.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-repositories.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-scheduled-jobs.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-startup.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-structure-and-boundaries.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-ui-construction.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-ui-mudblazor.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-ui-Radzen.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027x-ui-validation.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/README.md" />
   </Folder>
   <Folder Name="/docs/prompts/">
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/prompts/diagnositics.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/prompts/Localization Opt-In.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/prompts/README.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/prompts/services.md" />
-    <File Path="../oqtane-ai-playbook/playbook-example/docs/prompts/ui.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/diagnositics.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/Localization Opt-In.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/README.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/services.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/ui.md" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="README.md" />

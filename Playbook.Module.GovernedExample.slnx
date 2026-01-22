@@ -1,10 +1,11 @@
 <Solution>
   <Folder Name="/.github/">
     <File Path="../oqtane-ai-playbook/module-playbook-example/.github/copilot-instructions.md" />
+    <File Path=".github/module-instructions.md" />
   </Folder>
   <Folder Name="/docs/">
-    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/ai-decision-timeline.md" />
-    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/deviations.md" />
+    <File Path="docs/ai-decision-timeline.md" />
+    <File Path="docs/deviations.md" />
   </Folder>
   <Folder Name="/docs/governance/">
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/027-rules-index.md" />
@@ -27,19 +28,27 @@
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/README.md" />
   </Folder>
   <Folder Name="/docs/prompts/">
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/Authorization.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/diagnositics.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/Localization Opt-In.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/README.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/services.md" />
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/UI Construction Prompt.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/prompts/ui.md" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
   <Folder Name="/_Oqtane/">
-    <Project Path="../oqtane.framework/Oqtane.Client/Oqtane.Client.csproj" />
-    <Project Path="../oqtane.framework/Oqtane.Shared/Oqtane.Shared.csproj" />
-    <Project Path="../oqtane.framework/Oqtane.Server/Oqtane.Server.csproj" />
+    <Project Path="../oqtane.framework/Oqtane.Client/Oqtane.Client.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
+    <Project Path="../oqtane.framework/Oqtane.Server/Oqtane.Server.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
+    <Project Path="../oqtane.framework/Oqtane.Shared/Oqtane.Shared.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
   </Folder>
   <Project Path="Client/Playbook.Module.GovernedExample.Client.csproj" />
   <Project Path="Package/Playbook.Module.GovernedExample.Package.csproj" />

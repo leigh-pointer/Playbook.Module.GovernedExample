@@ -76,13 +76,14 @@ This repository shows:
 
 ## Repository Structure (Relevant Parts)
 
-```
+```text
 Playbook.Module.GovernedExample/
 ├── .github/
-│ └── copilot-instructions.md ← AI governance entry point
+│ └── copilot-instructions.md   ← AI governance entry point
+│ └── module-instructions.md    ← Extension to copilot-instructions (If file exists)
 │
 ├── docs/
-│ ├── governance/ ← Enforced rule documents (027x-*)
+│ ├── governance/ ← Enforced rule documents (027x-*) Referenced from module-playbook-example (do not duplicate here))
 │ ├── ai-decision-timeline.md ← Binding AI memory
 │ └── deviations.md ← Approved exceptions (if any)
 │
@@ -94,7 +95,7 @@ Playbook.Module.GovernedExample/
 text
 ```
 
-> 
+>
 > 
 > **Important:**
 > 

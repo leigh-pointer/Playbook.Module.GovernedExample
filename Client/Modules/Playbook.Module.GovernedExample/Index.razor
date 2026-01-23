@@ -18,15 +18,36 @@ else
     <br />
     @if (@_GovernedExamples.Count != 0)
     {
-        <Pager Items="@_GovernedExamples">
+        <Pager TableItem="GovernedExample" Items="@_GovernedExamples" PageSize="10" Format="Table" Toolbar="Both">
             <Header>
-                <th style="width: 1px;">&nbsp;</th>
-                <th style="width: 1px;">&nbsp;</th>
                 <th>@Localizer["Name"]</th>
+                <th style="width:200px">@Localizer["Actions"]</th>
             </Header>
             <Row>
-                <td><ActionLink Action="Edit" Parameters="@($"id=" + context.GovernedExampleId.ToString())" ResourceKey="Edit"  /></td>
-                <td><ActionDialog Header="Delete GovernedExample" Message="Are You Sure You Wish To Delete This GovernedExample?" Action="Delete" Security="SecurityAccessLevel.Edit" Class="btn btn-danger" OnClick="@(async () => await Delete(context))" ResourceKey="Delete"  Id="@context.GovernedExampleId.ToString()" /></td>
+                <td>@context.Name</td>
+                <td>
+                    @* Deletion must be confirmed via ActionDialog per module-instructions. Visible only in edit mode. *@
+                    <ActionDialog Header="@Localizer["ConfirmDeleteHeader"]"
+                                  Message="@string.Format(Localizer["Message.DeleteConfirm"], context.Name)"
+                                  Text="@Localizer["Delete"]"
+                                  Class="btn btn-danger"
+                                  ConfirmClass="btn btn-danger"
+                                  CancelClass="btn btn-secondary"
+                                  IconName="trash"
+                                  EditMode="true"
+                                  OnClick="@(() => { _ = Delete(context); })" />
+                </td>
+            </Row>
+        </Pager>
+        <Pager Items="@_GovernedExamples">
+            <Header>
+            <th style="width: 1px;">&nbsp;</th>
+            <th style="width: 1px;">&nbsp;</th>
+            <th>@Localizer["Name"]</th>
+            </Header>
+            <Row>
+                <td><ActionLink Action="Edit" Parameters="@($"id=" + context.GovernedExampleId.ToString())" ResourceKey="Edit" /></td>
+                <td><ActionDialog Header="Delete GovernedExample" Message="Are You Sure You Wish To Delete This GovernedExample?" Action="Delete" Security="SecurityAccessLevel.Edit" Class="btn btn-danger" OnClick="@(async () => await Delete(context))" ResourceKey="Delete" Id="@context.GovernedExampleId.ToString()" /></td>
                 <td>@context.Name</td>
             </Row>
         </Pager>

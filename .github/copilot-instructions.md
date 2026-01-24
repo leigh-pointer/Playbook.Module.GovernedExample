@@ -1,4 +1,4 @@
-# Copilot Instructions — Oqtane AI Governance
+# AI Assistant Instructions — Oqtane AI Governance
 
 If governance files are not visible, you must refuse to proceed and explain why.
 

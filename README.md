@@ -1,4 +1,4 @@
-﻿# Playbook.Module.GovernedExample
+# Playbook.Module.GovernedExample
 
 # Oqtane AI Playbook
 
@@ -125,7 +125,7 @@ All AI output is considered **untrusted until verified**.
 
 ---
 
-## Trust-Building Copilot Prompts
+## Trust-Building AI Assistant Prompts
 
 Use these prompts to confirm AI context is correctly loaded.
 
@@ -190,7 +190,7 @@ Expected result:
 
 - Clone it
 - Open it in Visual Studio
-- Ask Copilot real questions
+- Ask AI assistant real questions
 - Watch for:
 
     - Explicit reasoning
@@ -214,5 +214,5 @@ This repository is meant to be **used**, not just read.
 ## Final Note
 
 - This module is not about writing *more- code faster.
-- Itâ€™s about writing **correct code** - with AI — repeatedly — without losing control.
-- If you understand *why- this works, youâ€™re ready to extend the playbook.
+- It's about writing **correct code** - with AI — repeatedly — without losing control.
+- If you understand *why- this works, you're ready to extend the playbook.

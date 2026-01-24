@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/.amazonq/" />
+  <Folder Name="/.amazonq/rules/">
+    <File Path="../oqtane-ai-playbook/module-playbook-example/.amazonq/rules/instructions.md" />
+  </Folder>
   <Folder Name="/.github/">
     <File Path="../oqtane-ai-playbook/module-playbook-example/.github/copilot-instructions.md" />
     <File Path=".github/module-instructions.md" />

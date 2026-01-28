@@ -8,8 +8,8 @@
     <File Path=".github/module-instructions.md" />
   </Folder>
   <Folder Name="/docs/">
+    <File Path="../oqtane-ai-playbook/module-playbook-example/docs/ai-decision-timeline.md" />
     <File Path="../oqtane-ai-playbook/module-playbook-example/docs/governance/README.md" />
-    <File Path="docs/ai-decision-timeline.md" />
     <File Path="docs/deviations.md" />
   </Folder>
   <Folder Name="/docs/governance/">
